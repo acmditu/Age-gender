@@ -72,10 +72,10 @@ int main(int argc, char** argv)
     Net faceNet = readNet(faceModel, faceProto);
 
     VideoCapture cap;
-    if (argc > 1)
-        cap.open(argv[1]);
-    else
+    if (argc < 1)
         cap.open(0);
+    else
+        cap.open(argv[1]);
     int padding = 20;
     while(waitKey(1) < 0) {
       // read frame
