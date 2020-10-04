@@ -4,6 +4,7 @@ import math
 import time
 import argparse
 
+#draw box around face of subject
 def getFaceBox(net, frame, conf_threshold=0.7):
     frameOpencvDnn = frame.copy()
     fh = frameOpencvDnn.shape[0]
