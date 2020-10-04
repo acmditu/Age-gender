@@ -139,7 +139,11 @@ int main(int argc, char** argv)
         cv::putText(frameFace, label, Point(it->at(0), it->at(1) -15), cv::FONT_HERSHEY_SIMPLEX, 0.9, Scalar(0, 255, 255), 2, cv::LINE_AA);
         imshow("Frame", frameFace);
         imwrite("out.jpg",frameFace);
+
+        print("Hacktober!")
+
           print("Hacktoberfest");
+
       }
 
     }
