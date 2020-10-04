@@ -42,7 +42,7 @@ genderProto = "gender_deploy.prototxt"
 genderModel = "gender_net.caffemodel"
 
 MODEL_MEAN_VALUES = (78.4263377603, 87.7689143744, 114.895847746)
-ageList = ['(0-2)', '(4-6)', '(8-12)', '(15-20)', '(25-32)', '(38-43)', '(48-53)', '(60-100)']
+ageList = ['(0-2)', '(4-6)', '(8-12)', '(15-20)', '(25-32)', '(38-43)', '(48-53)', '(60-100)', '(100-120)', '(120-140)']
 genderList = ['Male', 'Female']
 
 # Load network
@@ -64,7 +64,8 @@ while cv.waitKey(1) < 0:
     frameFace, bboxes = getFaceBox(faceNet, frame)
     if not bboxes:
         print("No face Detected, Checking next frame")
-        print("Sorry Nothing detected")
+        continue
+    else:
         continue
 
     for bbox in bboxes:
@@ -89,4 +90,3 @@ while cv.waitKey(1) < 0:
         cv.imshow("Age Gender Demo", frameFace)
         # cv.imwrite("age-gender-out-{}".format(args.input),frameFace)
     print("time : {:.3f}".format(time.time() - t))
-    print("hactober fest")
