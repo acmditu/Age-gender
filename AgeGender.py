@@ -91,3 +91,4 @@ while cv.waitKey(1) < 0:
         # cv.imwrite("age-gender-out-{}".format(args.input),frameFace)
     print("time : {:.3f}".format(time.time() - t))
 print("hacktober")
+print("HacktoberFest 2020")
