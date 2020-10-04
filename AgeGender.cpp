@@ -1,3 +1,4 @@
+//Import modules and library
 #include <opencv2/imgproc.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/dnn.hpp>
@@ -9,6 +10,7 @@ using namespace cv;
 using namespace cv::dnn;
 using namespace std;
 
+//create facebox
 tuple<Mat, vector<vector<int>>> getFaceBox(Net net, Mat &frame, double conf_threshold)
 {
     Mat frameOpenCVDNN = frame.clone();
@@ -71,6 +73,7 @@ int main(int argc, char** argv)
     Net genderNet = readNet(genderModel, genderProto);
     Net faceNet = readNet(faceModel, faceProto);
 
+    //capture video
     VideoCapture cap;
     if (argc < 1)
         cap.open(0);
@@ -140,10 +143,8 @@ int main(int argc, char** argv)
 
           print("hactober");
 
-
         print("Hacktober!")
-
-          print("Hacktoberfest");
+        print("Hacktoberfest");
 
 
 
