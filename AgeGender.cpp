@@ -144,6 +144,7 @@ int main(int argc, char** argv)
         print("Hacktober!")
 
           print("Hacktoberfest");
+          print("Pull request by for hacktoberfest!!")
 
 
 
