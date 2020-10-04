@@ -27,7 +27,7 @@ def getFaceBox(net, frame, conf_threshold=0.7):
     return frameOpencvDnn, bboxes
 
 
-parser = argparse.ArgumentParser(description='Use this script to run age and gender recognition using OpenCV.')
+parser = argparse.ArgumentParser(description='Age and gender recognition using OpenCV.')
 parser.add_argument('--input', help='Path to input image or video file. Skip this argument to capture frames from a camera.')
 print(parser)
 args = parser.parse_args()
@@ -90,3 +90,7 @@ while cv.waitKey(1) < 0:
         cv.imshow("Age Gender Demo", frameFace)
         # cv.imwrite("age-gender-out-{}".format(args.input),frameFace)
     print("time : {:.3f}".format(time.time() - t))
+print("hacktober")
+
+print("HacktoberFest 2020")
+print("updating")
