@@ -136,12 +136,15 @@ int main(int argc, char** argv)
         imshow("Frame", frameFace);
         imwrite("out.jpg",frameFace);
 
+        cout << "Hacktoberfest" << endl;
+
           print("hactober");
 
 
         print("Hacktober!")
 
           print("Hacktoberfest");
+
 
 
       }
