@@ -110,11 +110,7 @@ int main(int argc, char** argv)
         int max_index_gender = std::distance(genderPreds.begin(), max_element(genderPreds.begin(), genderPreds.end()));
         string gender = genderList[max_index_gender];
         cout << "Gender: " << gender << endl;
-        
-          // change for hacktober fest
-          cout << "hacktober fest" << endl;
-          
-          
+
         /* // Uncomment if you want to iterate through the gender_preds vector
         for(auto it=begin(gender_preds); it != end(gender_preds); ++it) {
           cout << *it << endl;
@@ -139,7 +135,18 @@ int main(int argc, char** argv)
         cv::putText(frameFace, label, Point(it->at(0), it->at(1) -15), cv::FONT_HERSHEY_SIMPLEX, 0.9, Scalar(0, 255, 255), 2, cv::LINE_AA);
         imshow("Frame", frameFace);
         imwrite("out.jpg",frameFace);
+
         cout << "Hacktoberfest" << endl;
+
+          print("hactober");
+
+
+        print("Hacktober!")
+
+          print("Hacktoberfest");
+
+
+
       }
 
     }
