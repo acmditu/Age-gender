@@ -85,6 +85,7 @@ while cv.waitKey(1) < 0:
         print("Age Output : {}".format(agePreds))
         print("Age : {}, conf = {:.3f}".format(age, agePreds[0].max()))
 
+        #lable box with gender and age
         label = "{},{}".format(gender, age)
         cv.putText(frameFace, label, (bbox[0], bbox[1]-10), cv.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 255), 2, cv.LINE_AA)
         cv.imshow("Age Gender Demo", frameFace)
