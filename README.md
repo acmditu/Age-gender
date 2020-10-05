@@ -1,8 +1,6 @@
-# Age-Gender-Analyser
-#This tool analyse age of people. 
-#Hacktoberfest
+> # Age-Gender-Analyser
+ # This tool analyse age and gender of the people. 
 
-This program analyzes age and gender.
+ #Hacktoberfest
 
-#Hacktoberfest
 
