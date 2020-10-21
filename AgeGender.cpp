@@ -30,7 +30,7 @@ tuple<Mat, vector<vector<int>>> getFaceBox(Net net, Mat &frame, double conf_thre
     cv::Mat detectionMat(detection.size[2], detection.size[3], CV_32F, detection.ptr<float>());
 
     vector<vector<int>> bboxes;
-
+    //start of for 
     for(int i = 0; i < detectionMat.rows; i++)
     {
         float confidence = detectionMat.at<float>(i, 2);
@@ -49,7 +49,7 @@ tuple<Mat, vector<vector<int>>> getFaceBox(Net net, Mat &frame, double conf_thre
 
     return make_tuple(frameOpenCVDNN, bboxes);
 }
-
+//start of main
 int main(int argc, char** argv)
 {
     string faceProto = "opencv_face_detector.pbtxt";
