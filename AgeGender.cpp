@@ -139,8 +139,7 @@ int main(int argc, char** argv)
         imshow("Frame", frameFace);
         imwrite("out.jpg",frameFace);
           
-        cout << "Hacktoberfest 2020" << endl;
-        cout<< "SUCCESSFULL" << endl;    
+
 
       }
 
