@@ -63,6 +63,7 @@ while cv.waitKey(1) < 0:
         break
 
     frameFace, bboxes = getFaceBox(faceNet, frame)
+    #if and else condition to check the condition
     if not bboxes:
         print("No face Detected, Checking next frame")
         continue
