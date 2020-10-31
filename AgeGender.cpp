@@ -114,11 +114,11 @@ int main(int argc, char** argv)
         string gender = genderList[max_index_gender];
         cout << "Gender: " << gender << endl;
 
-        /* // Uncomment if you want to iterate through the gender_preds vector
+         // Uncomment if you want to iterate through the gender_preds vector
         for(auto it=begin(gender_preds); it != end(gender_preds); ++it) {
           cout << *it << endl;
         }
-        */
+        
 
         ageNet.setInput(blob);
         vector<float> agePreds = ageNet.forward();
